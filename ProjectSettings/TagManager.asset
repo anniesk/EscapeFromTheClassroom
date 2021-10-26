@@ -41,9 +41,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
   - name: Foreground
     uniqueID: 584006125
     locked: 0
   - name: UI
     uniqueID: 2257668071
+=======
+  - name: Background
+    uniqueID: 1834825587
+    locked: 0
+  - name: SnapPoints
+    uniqueID: 2403424713
+    locked: 0
+  - name: AlphabetBox
+    uniqueID: 1177928245
+    locked: 0
+  - name: Alphabet
+    uniqueID: 1357715595
+>>>>>>> player
     locked: 0
