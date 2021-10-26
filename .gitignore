@@ -73,6 +73,7 @@ crashlytics-build.properties
 
 
 # Visual Studio stuff
+.vscode/
 .vs/
 .idea/
 .gradle/
