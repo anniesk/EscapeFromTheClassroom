@@ -6,14 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-<<<<<<< HEAD
+    path: Assets/Scenes/PuzzleDScene.unity
+    guid: a1947ed456de94c8cb5fcfc6a84ed4c5
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-=======
-    path: Assets/Scenes/Classroom.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: fb22f9bbfb8db0e4293e1e48038426d2
+  - enabled: 1
+    path: Assets/Scenes/PuzzleBScene.unity
+    guid: 18de62808e490420b9c339940d132431
   - enabled: 1
     path: Assets/Scenes/Puzzle1.unity
     guid: 81f06845abe8b404fbf454f1ef0c1b0b
->>>>>>> player
+  - enabled: 1
+    path: Assets/Scenes/Classroom.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
