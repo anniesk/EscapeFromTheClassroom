@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 875822517
+    locked: 0
+  - name: SnapPoints
+    uniqueID: 1090319545
+    locked: 0
+  - name: Alphabet
+    uniqueID: 714119731
+    locked: 0
