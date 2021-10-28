@@ -44,9 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 875822517
     locked: 0
-  - name: SnapPoints
+  - name: Objects
     uniqueID: 1090319545
     locked: 0
-  - name: Alphabet
+  - name: Front
     uniqueID: 714119731
     locked: 0
