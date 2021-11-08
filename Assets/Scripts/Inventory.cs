@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {   
-public GameObject button;
-
+public GameObject button1;
+public GameObject button2;
 
     public Item[] Itemlist = new Item[5];
 
-    public List<InventorySlot> inventorySlots = new List<InventorySlot>();
+    public List<InventorySlot> inventorySlots = new List<InventorySlot>(5);
 
     private bool add(Item item){
         for(int i = 0; i < Itemlist.Length; i++){
@@ -32,8 +32,12 @@ public GameObject button;
         if(hasAdded){
             UpdateSlotUI();
         }
-        button.SetActive(false);
+        button1.SetActive(false);
+        button2.SetActive(false);
     }
 
-
+    public void Awake (){
+        button2.SetActive(false);
+        GameObject.DontDestroyOnLoad(this.gameObject);
+    }
 }

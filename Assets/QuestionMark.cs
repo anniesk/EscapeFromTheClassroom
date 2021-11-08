@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class QuestionMark : MonoBehaviour
 {   public Inventory inventory;
     public GameObject button;
+    public Canvas canvas;
 
     SpriteRenderer spriteRenderer;
     public Sprite questionmark;
@@ -17,7 +18,8 @@ public class QuestionMark : MonoBehaviour
     public Sprite letteru;
 
      void Start() {
-        button.SetActive(false);
+         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        button = canvas.transform.Find("Button").gameObject;
         Debug.Log("start function");
     }
 
@@ -50,6 +52,7 @@ public class QuestionMark : MonoBehaviour
                 if (GameObject.Find("QM3").GetComponent<SpriteRenderer>().sprite == letteru) {
                     Debug.Log("Kaikki oikein!");
 
+                    Debug.Log(button);
                     button.SetActive(true);
                     //inventory.AddItem(Resources.Load("Assets/Resources/TESTI2") as Item);
                 }
@@ -60,6 +63,5 @@ public class QuestionMark : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        button.SetActive(false);
     }
 }

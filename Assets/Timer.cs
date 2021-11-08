@@ -40,8 +40,4 @@ public class Timer : MonoBehaviour
 
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
-    public GameObject dontdestroy;
-        void Awake(){
-        DontDestroyOnLoad(dontdestroy);
-    }
 }
