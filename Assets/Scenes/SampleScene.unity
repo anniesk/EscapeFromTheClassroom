@@ -306,7 +306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198.841, y: 11.903}
+  m_AnchoredPosition: {x: -196.9, y: -26.097}
   m_SizeDelta: {x: 54.318, y: 52.193}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &293131839
@@ -667,6 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc5c08d0f7fe7d34a992a83f8b00ae4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 0}
   Itemlist:
   - {fileID: 0}
   - {fileID: 0}
@@ -960,6 +961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc5c08d0f7fe7d34a992a83f8b00ae4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 293131837}
   Itemlist:
   - {fileID: 0}
   - {fileID: 0}
@@ -3119,6 +3121,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1940210208}
     m_Modifications:
+    - target: {fileID: 3454145927024728, guid: 74452e248cd89c340bde9e7dffad89e8, type: 3}
+      propertyPath: dontdestroy
+      value: 
+      objectReference: {fileID: 519294382}
     - target: {fileID: 5377628513025225865, guid: 74452e248cd89c340bde9e7dffad89e8, type: 3}
       propertyPath: m_Name
       value: Timer

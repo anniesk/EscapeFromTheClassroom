@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class QuestionMark : MonoBehaviour
-{
+{   public Inventory inventory;
+    public GameObject button;
+
     SpriteRenderer spriteRenderer;
     public Sprite questionmark;
     public Sprite lettera;
@@ -11,6 +15,11 @@ public class QuestionMark : MonoBehaviour
     public Sprite letteri;
     public Sprite lettero;
     public Sprite letteru;
+
+     void Start() {
+        button.SetActive(false);
+        Debug.Log("start function");
+    }
 
     public void OnMouseDown() {
         if(spriteRenderer.sprite == questionmark)
@@ -40,6 +49,9 @@ public class QuestionMark : MonoBehaviour
             if (GameObject.Find("QM2").GetComponent<SpriteRenderer>().sprite == lettera) {
                 if (GameObject.Find("QM3").GetComponent<SpriteRenderer>().sprite == letteru) {
                     Debug.Log("Kaikki oikein!");
+
+                    button.SetActive(true);
+                    //inventory.AddItem(Resources.Load("Assets/Resources/TESTI2") as Item);
                 }
             }
         }
@@ -48,5 +60,6 @@ public class QuestionMark : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        button.SetActive(false);
     }
 }

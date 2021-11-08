@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
-{
+{   
+public GameObject button;
+
+
     public Item[] Itemlist = new Item[5];
+
     public List<InventorySlot> inventorySlots = new List<InventorySlot>();
 
     private bool add(Item item){
@@ -27,5 +32,8 @@ public class Inventory : MonoBehaviour
         if(hasAdded){
             UpdateSlotUI();
         }
+        button.SetActive(false);
     }
+
+
 }
