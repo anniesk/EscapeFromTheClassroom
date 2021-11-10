@@ -13,8 +13,9 @@ public class InventorySlot : MonoBehaviour
            icon.GetComponent<Image>().sprite = item.icon;
            icon.SetActive(true);
        }
+       // tämä ei päivitä UI inventaariota kun poistan vanhat?? miksi?
        else{
-           icon.SetActive(false);
+           icon.GetComponent<Image>().sprite = null;
        }
    }
 }

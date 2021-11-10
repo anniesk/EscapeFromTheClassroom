@@ -40,4 +40,35 @@ public GameObject button2;
         button2.SetActive(false);
         GameObject.DontDestroyOnLoad(this.gameObject);
     }
+
+    public void CraftPhone(Item newItem){
+        Item a = null;
+        Item b = null;
+        //Item apu;
+        int c = 0;
+        int d = 0;
+        for(int i = 0; i < Itemlist.Length; i++){
+            // otetaan tässä puhelimen osat muuttujiin, numerotkin vaikka
+            if(Itemlist[i] != null && Itemlist[i].type.Equals(Item.Type.Phone)){
+                 //apu = Itemlist[i];
+                if (a != null){
+                    b = Itemlist[i];
+                    d = i;
+                }
+                else {
+                    a = Itemlist[i];
+                    c = i;
+                }
+            }
+        }
+        if (a != null && b != null){
+        // täällä laitetaan puhelin listaan ja poistetaan vanhat
+        Itemlist[c] = null;
+        inventorySlots[c].item = null;
+        Itemlist[d] = null;
+        inventorySlots[d].item = null;
+        UpdateSlotUI();
+        AddItem(newItem);
+        }
+    }
 }
