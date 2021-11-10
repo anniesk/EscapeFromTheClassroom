@@ -12,6 +12,7 @@ public class Screenswitcher : MonoBehaviour
 
     public void goClassroom()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(sceneBuildIndex: 1);
     }
 }
