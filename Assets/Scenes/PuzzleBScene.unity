@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.7254902, g: 0.64705884, b: 0.5294118, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -400,13 +400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &185039448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,9 +412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
 --- !u!4 &185039449
 Transform:
   m_ObjectHideFlags: 0
@@ -806,7 +796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionmark: {fileID: 21300000, guid: 143f19e7a50f74d9a9f1c3d64ccfc69b, type: 3}
   lettera: {fileID: 21300000, guid: b4d802b988c054959893fe68b3517870, type: 3}
-  lettere: {fileID: 21300000, guid: 1ef6c37f8875f41cbb688a212821810c, type: 3}
+  lettere: {fileID: 21300000, guid: 18bcfc52daa5b4400bbdb356a3e6fcdf, type: 3}
   letteri: {fileID: 21300000, guid: d4eee6b583ff244199d7704c6224e962, type: 3}
   lettero: {fileID: 21300000, guid: 594cab4c10cfb49eb937320e835bae11, type: 3}
   letteru: {fileID: 21300000, guid: 0615d403a4fe442678472543645fe0ef, type: 3}
@@ -1098,7 +1088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionmark: {fileID: 21300000, guid: 143f19e7a50f74d9a9f1c3d64ccfc69b, type: 3}
   lettera: {fileID: 21300000, guid: b4d802b988c054959893fe68b3517870, type: 3}
-  lettere: {fileID: 21300000, guid: 1ef6c37f8875f41cbb688a212821810c, type: 3}
+  lettere: {fileID: 21300000, guid: 18bcfc52daa5b4400bbdb356a3e6fcdf, type: 3}
   letteri: {fileID: 21300000, guid: d4eee6b583ff244199d7704c6224e962, type: 3}
   lettero: {fileID: 21300000, guid: 594cab4c10cfb49eb937320e835bae11, type: 3}
   letteru: {fileID: 21300000, guid: 0615d403a4fe442678472543645fe0ef, type: 3}
@@ -1215,11 +1205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &1082971328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,17 +1217,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
 --- !u!223 &1082971329
 Canvas:
   m_ObjectHideFlags: 0
@@ -1627,7 +1601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionmark: {fileID: 21300000, guid: 143f19e7a50f74d9a9f1c3d64ccfc69b, type: 3}
   lettera: {fileID: 21300000, guid: b4d802b988c054959893fe68b3517870, type: 3}
-  lettere: {fileID: 21300000, guid: 1ef6c37f8875f41cbb688a212821810c, type: 3}
+  lettere: {fileID: 21300000, guid: 18bcfc52daa5b4400bbdb356a3e6fcdf, type: 3}
   letteri: {fileID: 21300000, guid: d4eee6b583ff244199d7704c6224e962, type: 3}
   lettero: {fileID: 21300000, guid: 594cab4c10cfb49eb937320e835bae11, type: 3}
   letteru: {fileID: 21300000, guid: 0615d403a4fe442678472543645fe0ef, type: 3}
