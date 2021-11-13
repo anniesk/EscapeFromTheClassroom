@@ -47,39 +47,39 @@ public class PhoneButton : MonoBehaviour
     public void OnMouseDown() {
         Vector3 worldpos = cam.ScreenToWorldPoint(Input.mousePosition);
         Debug.Log(worldpos.x +", " +worldpos.y);
-        if (worldpos.x > -4 && worldpos.x < -1.5) {
-            if (worldpos.y > 1.5 && worldpos.y < 3) {
+        if (worldpos.x > -2 && worldpos.x < -0.5) {
+            if (worldpos.y > -1.5 && worldpos.y < -0.9) {
                 lisaaNumero(1);
             }
-            else if (worldpos.y > 0 && worldpos.y < 1.5) {
+            else if (worldpos.y > -2.1 && worldpos.y < -1.5) {
                 lisaaNumero(4);
             }
-            else if (worldpos.y > -1.5 && worldpos.y < 0) {
+            else if (worldpos.y > -3 && worldpos.y < -2.1) {
                 lisaaNumero(7);
             }
         }
-        else if (worldpos.x > -1.5 && worldpos.x < 1.5) {
-            if (worldpos.y > 1.5 && worldpos.y < 3) {
+        else if (worldpos.x > -0.5 && worldpos.x < 0.5) {
+            if (worldpos.y > -1.6 && worldpos.y < -1) {
                 lisaaNumero(2);
             }
-            else if (worldpos.y > 0 && worldpos.y < 1.5) {
+            else if (worldpos.y > -2.5 && worldpos.y < -1.6) {
                 lisaaNumero(5);
             }
-            else if (worldpos.y > -1.5 && worldpos.y < 0) {
+            else if (worldpos.y > -3 && worldpos.y < -2.5) {
                 lisaaNumero(8);
             }
-            else if (worldpos.y > -3 && worldpos.y < -1.5) {
+            else if (worldpos.y > -4 && worldpos.y < -3) {
                 lisaaNumero(0);
             }
         }
-        else if (worldpos.x > 1.5 && worldpos.x < 4) {
-            if (worldpos.y > 1.5 && worldpos.y < 3) {
+        else if (worldpos.x > 0.5 && worldpos.x < 2) {
+            if (worldpos.y > -1.5 && worldpos.y < -0.9) {
                 lisaaNumero(3);
             }
-            else if (worldpos.y > 0 && worldpos.y < 1.5) {
+            else if (worldpos.y > -2.1 && worldpos.y < -1.5) {
                 lisaaNumero(6);
             }
-            else if (worldpos.y > -1.5 && worldpos.y < 0) {
+            else if (worldpos.y > -3 && worldpos.y < -2.1) {
                 lisaaNumero(9);
             }
         }
