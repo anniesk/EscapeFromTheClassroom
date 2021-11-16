@@ -5,14 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class Screenswitcher : MonoBehaviour
 {
-   public void goPuzzle()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
+   
     public void goClassroom()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         SceneManager.LoadScene(sceneBuildIndex: 1);
+    }
+
+    public void goPuzzleB()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 2);
+    }
+    public void goPuzzleD()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 0);
+    }
+
+    public void goPuzzleC()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 1);
+    }
+
+    public void goPuzzleF()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 1);
+    }
+
+    public void goPuzzleG()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 5);
     }
 }
