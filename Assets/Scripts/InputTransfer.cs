@@ -52,7 +52,13 @@ public class InputTransfer : MonoBehaviour
     List<Image> pointImages = new List<Image>();
 
     Screenswitcher switchScene = new Screenswitcher();
+
+    ItemActivator activator;
   
+    public InputTransfer(ItemActivator a)
+    {
+        activator = a;
+    }
 
     public void Start()
     {
@@ -155,6 +161,8 @@ public class InputTransfer : MonoBehaviour
 
         if(allVerbs.Count == 0)
         {
+            StartCoroutine(WaitAndShowNextVerb());
+            activator.changeStoryStage();
             switchScene.goClassroom();
         }
         else
@@ -202,5 +210,11 @@ public class InputTransfer : MonoBehaviour
         Debug.Log("uusi verbi: " + allVerbs[verbCalculator][0]);
         
 
+    }
+
+    private IEnumerator WaitForWhile()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(3);
     }
 }

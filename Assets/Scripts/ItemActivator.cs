@@ -16,18 +16,28 @@ public class ItemActivator : MonoBehaviour
     
     public List<GameObject> activatorItems;
 
-    int storyStage = 0;
+    int storyStage = 1;
     List<string> storyItems;
+
+    private void Awake()
+    {
+        InputTransfer input = new InputTransfer(this);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        activatorItems.Add(goPuzzleB);
+        activatorItems.Add(goPuzzleBlack);
     }
 
     void Update()
     {
-        if (storyStage == 0)
+        activatorItems.Clear();
+
+        if (storyStage == 1) activatorItems.Add(goPuzzleBlack);
+        if (storyStage == 2) activatorItems.Add(goPuzzleB);
+        if (storyStage == 3) activatorItems.Add(goPuzzleB);
+
         for (int i = 0; i < activatorItems.Count; i++)
         {
             if (Vector3.Distance(player.transform.position, activatorItems[i].transform.position) > distanceFromPlayer)
@@ -42,11 +52,13 @@ public class ItemActivator : MonoBehaviour
             }
         }
     }
-    void changeStoryStage(int a)
+    //0 = StartScene, 1 = Pigpen, 2 = Muistipeli, 3 = kännykkä, 4 = Ristikko, 5 = Taulu
+    //6 = EndScene
+    public void changeStoryStage() //int a
     {
         storyStage++;
     }
-    void changeStoryItems(string b)
+    public void changeStoryItems(string b)
     {
         storyItems.Add(b);
     }
