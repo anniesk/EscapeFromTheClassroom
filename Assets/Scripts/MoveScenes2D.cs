@@ -14,8 +14,4 @@ public class MoveScenes2D : MonoBehaviour
             SceneManager.LoadScene(newLevel);
         }
     }
-
-    public void OnClick(){
-            SceneManager.LoadScene(newLevel);
-    }
 }

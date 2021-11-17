@@ -611,7 +611,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5077529, y: 0.23458934}
+  m_Offset: {x: -0.031839192, y: -0.24152139}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -622,7 +622,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.8880606, y: 7.891087}
+  m_Size: {x: 0.77746904, y: 1.3524973}
   m_EdgeRadius: 0
 --- !u!212 &343108276
 SpriteRenderer:
@@ -752,7 +752,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.672601, y: -3.4537492}
+  m_AnchoredPosition: {x: -7.4501414, y: -4.1663957}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!20 &519420031
@@ -1126,7 +1126,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.27335, y: -1.345197}
+  m_Offset: {x: -0.017109215, y: 0.039999843}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1137,7 +1137,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.717563, y: 7.2368217}
+  m_Size: {x: 1.1301674, y: 1.6005027}
   m_EdgeRadius: 0
 --- !u!114 &733374051
 MonoBehaviour:
@@ -1344,7 +1344,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5197819}
+  m_Offset: {x: 0, y: 0.49999994}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1355,7 +1355,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.0395637}
+  m_Size: {x: 1, y: 0.0001}
   m_EdgeRadius: 0
 --- !u!50 &803077000
 Rigidbody2D:
@@ -2868,11 +2868,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 20.698843, y: 13.173066}
+    - - {x: 86.41791, y: 13.160921}
+      - {x: 20.698843, y: 13.173066}
       - {x: -26.443989, y: 12.600881}
-      - {x: -25.83741, y: -13.086854}
-      - {x: 0.91835815, y: -12.529604}
-      - {x: 20.99038, y: -13.5555}
+      - {x: -91.16063, y: 12.711967}
+      - {x: -91.406364, y: -13.265978}
+      - {x: -66.52792, y: -13.605205}
+      - {x: -2.0281475, y: -13.919189}
+      - {x: 0.91835815, y: -13.6002655}
+      - {x: 6.531999, y: -14.464463}
+      - {x: 86.04335, y: -13.5555}
 --- !u!4 &1732834508
 Transform:
   m_ObjectHideFlags: 0
