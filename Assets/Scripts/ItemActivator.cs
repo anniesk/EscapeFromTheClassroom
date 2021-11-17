@@ -32,7 +32,7 @@ public class ItemActivator : MonoBehaviour
         {
             if (Vector3.Distance(player.transform.position, activatorItems[i].transform.position) > distanceFromPlayer)
             {
-                Debug.Log("Player-Item: " + Vector3.Distance(player.transform.position, activatorItems[i].transform.position) + " set distance: " + distanceFromPlayer);
+                //Debug.Log("Player-Item: " + Vector3.Distance(player.transform.position, activatorItems[i].transform.position) + " set distance: " + distanceFromPlayer);
 
                 activatorItems[i].SetActive(false);
             }
