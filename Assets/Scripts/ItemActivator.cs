@@ -50,6 +50,26 @@ public class ItemActivator : MonoBehaviour
     {
         storyItems.Add(b);
     }
+
+    /*void whenClicked()
+    {
+        RaycastHit2D hits2D = Physics2D.GetRayIntersection(ray);
+        if (hits2D.collider != null)
+        {
+            Debug.Log("hit: " + hits2D.collider.tag);
+        }
+
+        RaycastHit2D[] hits2DAll = new RaycastHit2D[1];
+        int numberOfHits2D = Physics2D.GetRayIntersection(ray);
+        for (int i = 0; i < hits2DAll.Length; i++)
+        {
+            if ( hits2DAll[i].collider != null)
+            {
+                Debug.Log("Hit All: " + hits2DAll[i].collider.tag);
+            }
+        }
+
+    }*/
 }
 
     /*IEnumerator CheckActivation()
