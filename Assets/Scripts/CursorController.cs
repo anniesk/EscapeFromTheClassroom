@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CursorController : MonoBehaviour
 {
-    public Texture2D cursor;
+    /*public Texture2D cursor;
     public Texture2D cursorClicked;
 
     private CursorControls controls;
@@ -47,7 +47,7 @@ public class CursorController : MonoBehaviour
     {
         //Vector2 hotpot = new Vector2(cursortype.width / 2, cursortype.height / 2);
         Cursor.SetCursor(cursortype, Vector2.zero, CursorMode.Auto); //hotpot
-    }
+    }*/
     
     
 

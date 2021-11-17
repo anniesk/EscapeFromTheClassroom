@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CursorControls controls;
+   /* public CursorControls controls;
 
     private void Awake()
     {
@@ -44,9 +44,9 @@ public class PlayerMovement : MonoBehaviour
     private void OnDisable()
     {
         controls.Disable();
-    }
+    }*/
 
-    /*public float moveSpeed = 5f;
+    public float moveSpeed = 5f;
     public Rigidbody2D rb;
     Vector2 movement;
     // Start is called before the first frame update
@@ -66,5 +66,5 @@ public class PlayerMovement : MonoBehaviour
     {
         //Movement
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-    }*/
+    }
 }
