@@ -208,6 +208,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &26394193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -358,6 +360,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &86201867
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -480,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad60183555274fe2a849e48775e225b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empty: {fileID: 21300000, guid: 695c46237cd924413b96ce4cf1d5451c, type: 3}
+  empty: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   grey: {fileID: 21300000, guid: b5e0e8e7821044932a0a84295e27d17a, type: 3}
   lettera: {fileID: 21300000, guid: ed3c90b13e2264e17ac86fe717b15db6, type: 3}
   letterb: {fileID: 21300000, guid: 5cc09966506c9432cad09481ef337faf, type: 3}
@@ -508,6 +512,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &104006315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -548,7 +554,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 695c46237cd924413b96ce4cf1d5451c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -658,6 +664,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &220779755
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -780,7 +788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad60183555274fe2a849e48775e225b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empty: {fileID: 21300000, guid: 3d073e3b008624ba8b65d546e0b6c5ca, type: 3}
+  empty: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   grey: {fileID: 21300000, guid: b5e0e8e7821044932a0a84295e27d17a, type: 3}
   lettera: {fileID: 21300000, guid: ed3c90b13e2264e17ac86fe717b15db6, type: 3}
   letterb: {fileID: 21300000, guid: 5cc09966506c9432cad09481ef337faf, type: 3}
@@ -808,6 +816,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &269494254
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -848,7 +858,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3d073e3b008624ba8b65d546e0b6c5ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -966,6 +976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 481401366}
   - component: {fileID: 481401365}
+  - component: {fileID: 481401367}
   m_Layer: 0
   m_Name: Ristikko
   m_TagString: Untagged
@@ -1038,6 +1049,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &481401367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481401364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2131f6451c02605458d13435cc4da15e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Edellinen: 0
+  Alas: 0
 --- !u!1 &535303926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,6 +1148,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &535303929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1273,6 +1300,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &665981787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1423,6 +1452,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &727793800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1573,6 +1604,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &770373743
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1723,6 +1756,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &826155245
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1845,7 +1880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad60183555274fe2a849e48775e225b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empty: {fileID: 21300000, guid: 3295e5e20cb9f43a19f2f3cdbe940f6b, type: 3}
+  empty: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   grey: {fileID: 21300000, guid: b5e0e8e7821044932a0a84295e27d17a, type: 3}
   lettera: {fileID: 21300000, guid: ed3c90b13e2264e17ac86fe717b15db6, type: 3}
   letterb: {fileID: 21300000, guid: 5cc09966506c9432cad09481ef337faf, type: 3}
@@ -1873,6 +1908,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &983777257
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1913,7 +1950,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3295e5e20cb9f43a19f2f3cdbe940f6b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2023,6 +2060,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &1059730344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2173,6 +2212,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &1123452981
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2323,6 +2364,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &1281979639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2473,6 +2516,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &1462415952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2595,7 +2640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad60183555274fe2a849e48775e225b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empty: {fileID: 21300000, guid: d0cf3a16984064a5788289da3ee9bf8e, type: 3}
+  empty: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   grey: {fileID: 21300000, guid: b5e0e8e7821044932a0a84295e27d17a, type: 3}
   lettera: {fileID: 21300000, guid: ed3c90b13e2264e17ac86fe717b15db6, type: 3}
   letterb: {fileID: 21300000, guid: 5cc09966506c9432cad09481ef337faf, type: 3}
@@ -2623,6 +2668,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &1633185482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2663,7 +2710,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: d0cf3a16984064a5788289da3ee9bf8e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2745,7 +2792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad60183555274fe2a849e48775e225b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empty: {fileID: 21300000, guid: 43af6762ab7c04e6383c4f3a5d9a9b57, type: 3}
+  empty: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   grey: {fileID: 21300000, guid: b5e0e8e7821044932a0a84295e27d17a, type: 3}
   lettera: {fileID: 21300000, guid: ed3c90b13e2264e17ac86fe717b15db6, type: 3}
   letterb: {fileID: 21300000, guid: 5cc09966506c9432cad09481ef337faf, type: 3}
@@ -2773,6 +2820,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &1655762929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2813,7 +2862,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 43af6762ab7c04e6383c4f3a5d9a9b57, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2895,7 +2944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad60183555274fe2a849e48775e225b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empty: {fileID: 21300000, guid: 2747216f456264173b1265864593a322, type: 3}
+  empty: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   grey: {fileID: 21300000, guid: b5e0e8e7821044932a0a84295e27d17a, type: 3}
   lettera: {fileID: 21300000, guid: ed3c90b13e2264e17ac86fe717b15db6, type: 3}
   letterb: {fileID: 21300000, guid: 5cc09966506c9432cad09481ef337faf, type: 3}
@@ -2923,6 +2972,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &1692091253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2963,7 +3014,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 2747216f456264173b1265864593a322, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30e2d6decff844f1ab9c4a9ab467cd20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3073,6 +3124,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &1783036682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3223,6 +3276,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &1809662202
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3373,6 +3428,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &1849373095
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3562,6 +3619,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!61 &2051812582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3673,6 +3732,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &2079283692
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3823,6 +3884,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &2090009370
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3973,6 +4036,8 @@ MonoBehaviour:
   letterx: {fileID: 21300000, guid: b31706b377f8c44c09ac54f75539480c, type: 3}
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
+  edellinen: 0
+  alas: 0
 --- !u!212 &2113287052
 SpriteRenderer:
   m_ObjectHideFlags: 0
