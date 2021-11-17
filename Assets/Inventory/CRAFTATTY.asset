@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eec43f47aa1c044e85450ee1ab650fa, type: 3}
   m_Name: CRAFTATTY
   m_EditorClassIdentifier: 
-  itemName: Valmis
+  itemName: Puhelin
   Itemdescription: New Description
   icon: {fileID: 21300000, guid: 347bb9dbdefcbf545830ba934944c7c4, type: 3}
   type: 0

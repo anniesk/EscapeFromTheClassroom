@@ -8,12 +8,13 @@ public class Inventory : MonoBehaviour
 public GameObject button1;
 public GameObject button2;
 
-    public Item[] Itemlist = new Item[5];
+   // public Item[] Itemlist = new Item[5];
+   public List<Item> Itemlist = new List<Item>(5);
 
     public List<InventorySlot> inventorySlots = new List<InventorySlot>(5);
 
     private bool add(Item item){
-        for(int i = 0; i < Itemlist.Length; i++){
+        for(int i = 0; i < Itemlist.Count; i++){
             if(Itemlist[i] == null){
                 Itemlist[i] = item;
                 inventorySlots[i].item = item;
@@ -47,7 +48,7 @@ public GameObject button2;
         //Item apu;
         int c = 0;
         int d = 0;
-        for(int i = 0; i < Itemlist.Length; i++){
+        for(int i = 0; i < Itemlist.Count; i++){
             // otetaan tässä puhelimen osat muuttujiin, numerotkin vaikka
             if(Itemlist[i] != null && Itemlist[i].type.Equals(Item.Type.Phone)){
                  //apu = Itemlist[i];
@@ -70,5 +71,8 @@ public GameObject button2;
         UpdateSlotUI();
         AddItem(newItem);
         }
+        GameObject craft = GameObject.Find("Testaacrafting");
+        craft.SetActive(false);
+
     }
 }
