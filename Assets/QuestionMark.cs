@@ -19,7 +19,7 @@ public class QuestionMark : MonoBehaviour
 
      void Start() {
          canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-        button = canvas.transform.Find("Button").gameObject;
+        button = canvas.transform.Find("CipherButton").gameObject;
         Debug.Log("start function");
     }
 

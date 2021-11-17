@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
 public GameObject button1;
 public GameObject button2;
 
+
    // public Item[] Itemlist = new Item[5];
    public List<Item> Itemlist = new List<Item>(5);
 
@@ -17,6 +18,8 @@ public GameObject button2;
         for(int i = 0; i < Itemlist.Count; i++){
             if(Itemlist[i] == null){
                 Itemlist[i] = item;
+                Debug.Log(item);
+                Debug.Log(inventorySlots);
                 inventorySlots[i].item = item;
                 return true;
             }
@@ -70,9 +73,11 @@ public GameObject button2;
         inventorySlots[d].item = null;
         UpdateSlotUI();
         AddItem(newItem);
+       
         }
-        GameObject craft = GameObject.Find("Testaacrafting");
-        craft.SetActive(false);
+
+        
+        
 
     }
 }

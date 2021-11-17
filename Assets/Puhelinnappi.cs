@@ -54,6 +54,7 @@ public class Puhelinnappi : MonoBehaviour
             else if (inventory.Itemlist[i].itemName == "Puhelin"){
                 //button.gameObject.SetActive(true);
                 button.interactable = true;
+                button2.SetActive(false);
             }
         }
         }
