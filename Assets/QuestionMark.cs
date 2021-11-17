@@ -19,7 +19,7 @@ public class QuestionMark : MonoBehaviour
 
      void Start() {
          canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-        button = canvas.transform.Find("CipherButton").gameObject;
+      //  button = canvas.transform.Find("CipherButton").gameObject;
         Debug.Log("start function");
     }
 
@@ -53,7 +53,7 @@ public class QuestionMark : MonoBehaviour
                     Debug.Log("Kaikki oikein!");
 
                     Debug.Log(button);
-                    button.SetActive(true);
+                    //button.SetActive(true);
                     //inventory.AddItem(Resources.Load("Assets/Resources/TESTI2") as Item);
                 }
             }
