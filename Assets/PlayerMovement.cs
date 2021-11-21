@@ -22,8 +22,21 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         
-        animator.SetFloat("speed", Mathf.Abs(movement.x));
+        //animaatio
+        animator.SetFloat("vert", Mathf.Abs(movement.y));
+        animator.SetFloat("horiz", Mathf.Abs(movement.x));
+
+        //Flip the Character
+        Vector3 charScale = transform.localScale;
+        if (Input.GetAxis("Horizontal") <  0) {
+            charScale.x = -4;
+        }
+        if (Input.GetAxis("Horizontal") > 0) {
+            charScale.x = 4;
+        }
+        transform.localScale = charScale;
     }
+
     void FixedUpdate()
     {
         //Movement
