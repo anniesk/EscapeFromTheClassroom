@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5eec43f47aa1c044e85450ee1ab650fa, type: 3}
-  m_Name: Ruuvimeisseli
+  m_Name: Akku
   m_EditorClassIdentifier: 
-  itemName: Ruuvimeisseli
+  itemName: Akku
   Itemdescription: New Description
-  icon: {fileID: 21300000, guid: 5b6340cd84374401f90dabade628041a, type: 3}
-  type: 2
+  icon: {fileID: 21300000, guid: 2c56a371947a648d5ad7849a5be71052, type: 3}
+  type: 1

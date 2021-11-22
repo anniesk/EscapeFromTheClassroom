@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5eec43f47aa1c044e85450ee1ab650fa, type: 3}
-  m_Name: TESTI2
+  m_Name: Liitu
   m_EditorClassIdentifier: 
-  itemName: Phone
+  itemName: Liitu
   Itemdescription: New Description
-  icon: {fileID: 21300000, guid: 50d6d64d45f93f64b84d29b61075b6e5, type: 3}
-  type: 1
+  icon: {fileID: 21300000, guid: 325b15491944a4be68028a06a7132ced, type: 3}
+  type: 0

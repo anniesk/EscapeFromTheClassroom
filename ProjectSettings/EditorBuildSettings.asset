@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PuzzleBlackboard.unity
     guid: 6d63d5fa3267abd4ba06b8ddb050de88
+  - enabled: 1
+    path: Assets/Scenes/PuzzleCScene.unity
+    guid: 9dc322e7961c94d82b2f704a528a24f3
+  - enabled: 1
+    path: "Assets/Scenes/Loppun\xE4kym\xE4.unity"
+    guid: 833a11d22774bb54faf948294a2c5298
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: bbf57d2377e36a24b88a097f0d7b592d
   m_configObjects: {}

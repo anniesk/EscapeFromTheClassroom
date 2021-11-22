@@ -18,7 +18,7 @@ Inventory inventory;
         //Attach Physics2DRaycaster to the Camera
         Camera.main.gameObject.AddComponent<Physics2DRaycaster>();
         handler = GameObject.Find("InventoryHandler");
-        //inventory = handler.GetComponent<Inventory>();
+        inventory = handler.GetComponent<Inventory>();
         addEventSystem();
     }
 
