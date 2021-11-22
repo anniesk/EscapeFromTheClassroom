@@ -27,6 +27,7 @@ public class MainToken2 : MonoBehaviour
                 gameControl.GetComponent<GameControl>().Tila2 = true;
                 gameControl.GetComponent<GameControl>().kuinkamontakaannetty++;
                 spriteRenderer.sprite = face;
+                GetComponent<AudioSource>().Play();
             }
             else
             {

@@ -9,7 +9,6 @@ public class MainToken1 : MonoBehaviour
     public Sprite face;
     public Sprite back;
 
-
     public void OnMouseDown()
     {
         // Tarkistaa onko taman verbin kaikki muodot jo loydetty
@@ -27,6 +26,7 @@ public class MainToken1 : MonoBehaviour
                 gameControl.GetComponent<GameControl>().Tila1 = true;
                 gameControl.GetComponent<GameControl>().kuinkamontakaannetty++;
                 spriteRenderer.sprite = face;
+                GetComponent<AudioSource>().Play();
             }
             else
             {
