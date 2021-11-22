@@ -19,7 +19,7 @@ public GameObject button2;
             if(Itemlist[i] == null){
                 Itemlist[i] = item;
                 Debug.Log(item);
-                Debug.Log(inventorySlots);
+                Debug.Log(Itemlist[i]);
                 inventorySlots[i].item = item;
                 return true;
             }
