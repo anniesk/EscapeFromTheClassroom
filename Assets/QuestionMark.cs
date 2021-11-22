@@ -11,6 +11,7 @@ public class QuestionMark : MonoBehaviour
     public Sprite letteri;
     public Sprite lettero;
     public Sprite letteru;
+    public AudioSource done;
 
     public void OnMouseDown() {
         if(spriteRenderer.sprite == questionmark)
@@ -40,6 +41,7 @@ public class QuestionMark : MonoBehaviour
             if (GameObject.Find("QM2").GetComponent<SpriteRenderer>().sprite == lettera) {
                 if (GameObject.Find("QM3").GetComponent<SpriteRenderer>().sprite == letteru) {
                     Debug.Log("Kaikki oikein!");
+                    done.Play();
                 }
             }
         }
