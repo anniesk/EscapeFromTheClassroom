@@ -309,11 +309,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   inventorySlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1791548754}
+  - {fileID: 126862689}
+  - {fileID: 1428113392}
+  - {fileID: 534065601}
+  - {fileID: 426581730}
 --- !u!4 &105404376
 Transform:
   m_ObjectHideFlags: 0
@@ -321,12 +321,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105404374}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 189.97719, y: 105.94513, z: -2294.9998}
+  m_LocalScale: {x: 25.499998, y: 25.499998, z: 25.499998}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1940210208}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &126862684
 GameObject:
@@ -506,7 +506,7 @@ MonoBehaviour:
         m_MethodName: AddItem
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 1d8ace49004505841a9938907e46702a, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 86f0c7f733455ef45a88b56f1d2211f8, type: 2}
           m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3702,6 +3702,7 @@ RectTransform:
   - {fileID: 1400074121}
   - {fileID: 128747275}
   - {fileID: 1919733655}
+  - {fileID: 105404376}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
