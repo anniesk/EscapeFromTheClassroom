@@ -754,7 +754,10 @@ public class LetterBox : MonoBehaviour
     }
 
     public void OnMouseDown()
-    {
+    {   
+        if (GetComponent<AudioSource>() != null) {
+            GetComponent<AudioSource>().Play();
+        }
         for (int i = 1; i < 26; i++)
         {
             if (GameObject.Find("Letter" + i).GetComponent<SpriteRenderer>().sprite == grey)
