@@ -32,7 +32,7 @@
              if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Akku"){
                 a = inventory.Itemlist[i];
              }
-             else if (inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Phone"){
+             else if (inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "PuhelinEIAKKUA"){
                  b = inventory.Itemlist[i];
              }
         }

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class QuestionMark : MonoBehaviour
 {
+    public GameObject button;
+    public Canvas canvas;
+
+
     SpriteRenderer spriteRenderer;
     public Sprite questionmark;
     public Sprite lettera;
@@ -11,6 +15,12 @@ public class QuestionMark : MonoBehaviour
     public Sprite letteri;
     public Sprite lettero;
     public Sprite letteru;
+
+    void Start() {
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        button = canvas.transform.Find("CipherButton").gameObject;
+        Debug.Log("start function");
+    }
 
     public void OnMouseDown() {
         if(spriteRenderer.sprite == questionmark)
@@ -40,6 +50,10 @@ public class QuestionMark : MonoBehaviour
             if (GameObject.Find("QM2").GetComponent<SpriteRenderer>().sprite == lettera) {
                 if (GameObject.Find("QM3").GetComponent<SpriteRenderer>().sprite == letteru) {
                     Debug.Log("Kaikki oikein!");
+
+                    Debug.Log(button);
+                    button.SetActive(true);
+
                 }
             }
         }

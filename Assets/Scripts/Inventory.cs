@@ -5,8 +5,13 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {   
-public GameObject button1;
-public GameObject button2;
+public GameObject puhelin;
+public GameObject cipher;
+public GameObject muistipeli;
+public GameObject liitutaulu;
+
+public GameObject ristikko;
+
 
 
    // public Item[] Itemlist = new Item[5];
@@ -36,12 +41,21 @@ public GameObject button2;
         if(hasAdded){
             UpdateSlotUI();
         }
-        button1.SetActive(false);
-        button2.SetActive(false);
+        // aina tarkistetaan että kaikki nappulat on piilotettu
+        puhelin.SetActive(false);
+        cipher.SetActive(false);
+        ristikko.SetActive(false);
+        liitutaulu.SetActive(false);
+        muistipeli.SetActive(false);
     }
 
     public void Awake (){
-        button2.SetActive(false);
+        // kaikki nappulat piilotettu
+        puhelin.SetActive(false);
+        cipher.SetActive(false);
+        ristikko.SetActive(false);
+        liitutaulu.SetActive(false);
+        muistipeli.SetActive(false);
         GameObject.DontDestroyOnLoad(this.gameObject);
     }
 
