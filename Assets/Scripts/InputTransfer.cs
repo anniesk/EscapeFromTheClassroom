@@ -40,9 +40,20 @@ public class InputTransfer : MonoBehaviour
     public Sprite emptyPoint;
     public Sprite point;
 
+    public AudioSource incorrect;
+    public AudioSource allDone;
+    public AudioSource sitAudio;
+    public AudioSource singAudio;
+    public AudioSource readAudio;
+    public AudioSource lieAudio;
+    public AudioSource drawAudio;
+    public AudioSource cutAudio;
+    public AudioSource blowAudio;
+    public AudioSource biteAudio;
+
     int verbCalculator = 0;
 
-    string[] arrayAllVerbs = { "sit", "sit", "sit" , "sing", "sang", "sung", "read", "read", "read",
+    string[] arrayAllVerbs = { "sit", "sat", "sat" , "sing", "sang", "sung", "read", "read", "read",
     "lie", "lay", "lain", "draw", "drew", "drawn", "cut", "cut", "cut", "blow", "blew", "blown",
     "bite", "bit", "bitten"};
     List<string> rightAnswer = new List<string>();
@@ -50,6 +61,7 @@ public class InputTransfer : MonoBehaviour
     List <List<string>> allVerbs = new List<List<string>>();
     List<Sprite> sprites = new List<Sprite>();
     List<Image> pointImages = new List<Image>();
+    List<AudioSource> audioSources = new List<AudioSource>();
 
     Screenswitcher switchScene = new Screenswitcher();
   
@@ -81,8 +93,8 @@ public class InputTransfer : MonoBehaviour
         sprites.Add(biteImage);
 
         rightAnswer.Add("sit");
-        rightAnswer.Add("sit");
-        rightAnswer.Add("sit");
+        rightAnswer.Add("sat");
+        rightAnswer.Add("sat");
 
         pointImages.Add(onePoint);
         pointImages.Add(twoPoint);
@@ -92,6 +104,15 @@ public class InputTransfer : MonoBehaviour
         pointImages.Add(sixPoint);
         pointImages.Add(sevenPoint);
         pointImages.Add(eightPoint);
+
+        audioSources.Add(sitAudio);
+        audioSources.Add(singAudio);
+        audioSources.Add(readAudio);
+        audioSources.Add(lieAudio);
+        audioSources.Add(drawAudio);
+        audioSources.Add(cutAudio);
+        audioSources.Add(blowAudio);
+        audioSources.Add(biteAudio);
 
         Debug.Log("Hei!");
         //Debug.Log(allVerbs[0][0]);
@@ -111,6 +132,7 @@ public class InputTransfer : MonoBehaviour
         {
             textPreesens.text = rightAnswer[0]; // rightPreesens; //textPreesens.GetComponent<Text>().text = rightAnswer[0];
             rightCalculator --;
+            incorrect.Play();
         }
         else
         {
@@ -120,6 +142,7 @@ public class InputTransfer : MonoBehaviour
         {
             textImperfect.text = rightAnswer[1]; // rightImperfect;
             rightCalculator--;
+            incorrect.Play();
         }
         else
         {
@@ -129,6 +152,7 @@ public class InputTransfer : MonoBehaviour
         {
             textPerfect.text = rightAnswer[2]; // rightPerfect;
             rightCalculator--;
+            incorrect.Play();
         }
         else
         {
@@ -138,10 +162,12 @@ public class InputTransfer : MonoBehaviour
         if (rightCalculator == 3)
         {
             textPreesens.text = "Right!";
+            audioSources[verbCalculator].Play();
             pointImages[0].sprite = point;
             allVerbs.RemoveAt(verbCalculator);
             sprites.RemoveAt(verbCalculator);
             pointImages.RemoveAt(0);
+            audioSources.RemoveAt(verbCalculator);
 
             if (allVerbs.Count != 0)
             {

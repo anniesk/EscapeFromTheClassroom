@@ -30,6 +30,7 @@ Inventory inventory;
                  SceneManager.LoadScene("PuzzleDScene");
             }
             else {
+                GetComponent<AudioSource>().Play();
                 Debug.Log("Pelaajalla ei ole ruuvimeisseliä inventaariossa");
             }
          } 
