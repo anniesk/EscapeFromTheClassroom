@@ -19,6 +19,54 @@ public class MoveScenes2D : MonoBehaviour
         //oven avaus ja avaimen tarkistus
         if(other.CompareTag("Player") && this.gameObject.name == "Ovi"){
                  for(int i = 0; i < inventory.Itemlist.Count; i++){
+                     if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "DoorAvain"){
+                         SceneManager.LoadScene(newLevel);
+                         check = true;
+                        }
+                        else {
+                            check = false;
+                        }
+                    }
+                    if (check == false){
+                        // mitä tapahtuu jos ei avainta
+                        Debug.Log("Ei avainta.");
+                        // tähän ääni
+                    }
+            }
+        else if(other.CompareTag("Player") && this.gameObject.name == "Liitutaulu"){
+                 for(int i = 0; i < inventory.Itemlist.Count; i++){
+                     if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Liitu"){
+                         SceneManager.LoadScene(newLevel);
+                         check = true;
+                        }
+                        else {
+                            check = false;
+                        }
+                    }
+                    if (check == false){
+                        // mitä tapahtuu jos ei avainta
+                        Debug.Log("Ei avainta.");
+                        // tähän ääni
+                    }
+            }
+        else if(other.CompareTag("Player") && this.gameObject.name == "Pulpetti (2)"){
+                 for(int i = 0; i < inventory.Itemlist.Count; i++){
+                     if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Ruuvimeisseli"){
+                         SceneManager.LoadScene(newLevel);
+                         check = true;
+                        }
+                        else {
+                            check = false;
+                        }
+                    }
+                    if (check == false){
+                        // mitä tapahtuu jos ei avainta
+                        Debug.Log("Ei avainta.");
+                        // tähän ääni
+                    }
+            }
+        else if(other.CompareTag("Player") && this.gameObject.name == "Pulpetti"){
+                 for(int i = 0; i < inventory.Itemlist.Count; i++){
                      if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Avain"){
                          SceneManager.LoadScene(newLevel);
                          check = true;
@@ -30,9 +78,9 @@ public class MoveScenes2D : MonoBehaviour
                     if (check == false){
                         // mitä tapahtuu jos ei avainta
                         Debug.Log("Ei avainta.");
+                        // tähän ääni
                     }
             }
-
         else if(other.CompareTag("Player"))
         {
             
