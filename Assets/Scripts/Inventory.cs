@@ -9,6 +9,7 @@ public GameObject puhelin;
 public GameObject cipher;
 public GameObject muistipeli;
 public GameObject liitutaulu;
+public GameObject doorkey;
 
 public GameObject ristikko;
 
@@ -47,6 +48,7 @@ public static Inventory Instance;
         ristikko.SetActive(false);
         liitutaulu.SetActive(false);
         muistipeli.SetActive(false);
+        doorkey.SetActive(false);
     }
 
     public void Awake (){
@@ -56,6 +58,7 @@ public static Inventory Instance;
         ristikko.SetActive(false);
         liitutaulu.SetActive(false);
         muistipeli.SetActive(false);
+        doorkey.SetActive(false);
     }
 
     public void CraftPhone(Item newItem){

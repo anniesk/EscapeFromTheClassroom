@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class InputTransfer : MonoBehaviour
 {
+
+    public GameObject button;
+    public Canvas canvas;
+
     public string preesens;
     public InputField inputPreesens; //GameObject
     public Text textPreesens; // GameObject
@@ -68,6 +72,9 @@ public class InputTransfer : MonoBehaviour
 
     public void Start()
     {
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        button = canvas.transform.Find("DoorKeyButton").gameObject;
+
         int value = 0;
         
         for (int i = 0; i < 8; i++)
@@ -181,7 +188,8 @@ public class InputTransfer : MonoBehaviour
 
         if(allVerbs.Count == 0)
         {
-            switchScene.goClassroom();
+            button.SetActive(true);
+            allDone.Play();
         }
         else
         {

@@ -6,6 +6,9 @@ public class GameControl : MonoBehaviour
 {
     GameObject token;
 
+    public GameObject button;
+    public Canvas canvas;
+
     public bool Tila1;
     public bool Tila2;
     public bool Tila3;
@@ -23,6 +26,8 @@ public class GameControl : MonoBehaviour
     public bool Loydettybuy;
     public bool Loydettybe;
     public bool Loydettybring;
+
+    public AudioSource done;
 
     public int kuinkamontakaannetty;
 
@@ -59,19 +64,8 @@ public class GameControl : MonoBehaviour
         Loydettybe = false;
         Loydettybring = false;
         kuinkamontakaannetty = 0;
-        //Tila1 = GameObject.Find("Token1").GetComponent<SpriteRenderer>().sprite;
-        //Tila2 = GameObject.Find("Token2").GetComponent<SpriteRenderer>().sprite;
-        //Tila3 = GameObject.Find("Token3").GetComponent<SpriteRenderer>().sprite;
-        //Tila4 = GameObject.Find("Token4").GetComponent<SpriteRenderer>().sprite;
-        //Tila5 = GameObject.Find("Token5").GetComponent<SpriteRenderer>().sprite;
-        //Tila6 = GameObject.Find("Token6").GetComponent<SpriteRenderer>().sprite;
-        //Tila7 = GameObject.Find("Token7").GetComponent<SpriteRenderer>().sprite;
-        //Tila8 = GameObject.Find("Token8").GetComponent<SpriteRenderer>().sprite;
-        //Tila9 = GameObject.Find("Token9").GetComponent<SpriteRenderer>().sprite;
-        //Tila10 = GameObject.Find("Token10").GetComponent<SpriteRenderer>().sprite;
-        //Tila11 = GameObject.Find("Token11").GetComponent<SpriteRenderer>().sprite;
-        //Tila12 = GameObject.Find("Token12").GetComponent<SpriteRenderer>().sprite;
-        //Debug.Log(Tila1);
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        button = canvas.transform.Find("memoryButton").gameObject;
     }
 
     public void Tarkista() {
@@ -86,6 +80,10 @@ public class GameControl : MonoBehaviour
         }
         if (Tila9 && Tila4 && Tila8) {
             Loydettybring = true;
+        }
+        if (Loydettybe && Loydettybring && Loydettybuy && Loydettyget) {
+            button.SetActive(true);
+            done.Play();
         }
     }
 

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PhoneButton : MonoBehaviour
 {
+
+    public GameObject button;
+    public Canvas canvas;
+
     private Camera cam;
     public AudioSource audio1;
     public AudioSource audio2;
@@ -12,6 +16,8 @@ public class PhoneButton : MonoBehaviour
     public int[] kymmenenedellista = new int[10];
 
     void Start() {
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        button = canvas.transform.Find("BlackBoardButton").gameObject;
         cam = Camera.main;
         audio1.Play();
     }
@@ -48,6 +54,7 @@ public class PhoneButton : MonoBehaviour
             Debug.Log("DUG3");
             audio3.Stop();
             audio4.Play();
+            button.SetActive(true);
         }
     }
 

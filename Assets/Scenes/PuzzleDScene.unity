@@ -1020,6 +1020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3f4e44d2967414f9e9399c633e1a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  canvas: {fileID: 0}
   Tila1: 0
   Tila2: 0
   Tila3: 0
@@ -1036,6 +1038,7 @@ MonoBehaviour:
   Loydettybuy: 0
   Loydettybe: 0
   Loydettybring: 0
+  done: {fileID: 0}
   kuinkamontakaannetty: 0
   back: {fileID: 21300000, guid: 003d96a5bffa94558b15cd3325904a17, type: 3}
   Ruutu1: {fileID: 21300000, guid: 0220eb2165cdb4c378fe4662ab0d3fea, type: 3}
@@ -2417,7 +2420,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 56e55fdf90c964900a3799ad9207cfc2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bde9bd22968bb426cad6b41a705e7916, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

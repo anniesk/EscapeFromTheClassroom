@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class LetterBox : MonoBehaviour
 {
+
+    public GameObject button;
+    public Canvas canvas;
     SpriteRenderer spriteRenderer;
     public Sprite empty;
     public Sprite grey;
@@ -42,7 +45,8 @@ public class LetterBox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        button = canvas.transform.Find("RistikkoButton").gameObject;
     }
 
     // Update is called once per frame
@@ -744,8 +748,7 @@ public class LetterBox : MonoBehaviour
                 else if (GameObject.Find("Letter1").GetComponent<SpriteRenderer>().sprite == lettera && GameObject.Find("Letter2").GetComponent<SpriteRenderer>().sprite == lettert && GameObject.Find("Letter3").GetComponent<SpriteRenderer>().sprite == lettere && GameObject.Find("Letter4").GetComponent<SpriteRenderer>().sprite == letterm && GameObject.Find("Letter5").GetComponent<SpriteRenderer>().sprite == lettero && GameObject.Find("Letter6").GetComponent<SpriteRenderer>().sprite == letterc && GameObject.Find("Letter7").GetComponent<SpriteRenderer>().sprite == lettere && GameObject.Find("Letter8").GetComponent<SpriteRenderer>().sprite == letterb && GameObject.Find("Letter9").GetComponent<SpriteRenderer>().sprite == letterh && GameObject.Find("Letter10").GetComponent<SpriteRenderer>().sprite == lettero && GameObject.Find("Letter11").GetComponent<SpriteRenderer>().sprite == letters && GameObject.Find("Letter12").GetComponent<SpriteRenderer>().sprite == lettere && GameObject.Find("Letter13").GetComponent<SpriteRenderer>().sprite == letterk && GameObject.Find("Letter14").GetComponent<SpriteRenderer>().sprite == lettern && GameObject.Find("Letter15").GetComponent<SpriteRenderer>().sprite == letteru && GameObject.Find("Letter16").GetComponent<SpriteRenderer>().sprite == lettera && GameObject.Find("Letter17").GetComponent<SpriteRenderer>().sprite == letterd && GameObject.Find("Letter18").GetComponent<SpriteRenderer>().sprite == letterr && GameObject.Find("Letter19").GetComponent<SpriteRenderer>().sprite == letteri && GameObject.Find("Letter20").GetComponent<SpriteRenderer>().sprite == letters && GameObject.Find("Letter21").GetComponent<SpriteRenderer>().sprite == letterb && GameObject.Find("Letter22").GetComponent<SpriteRenderer>().sprite == letterl && GameObject.Find("Letter23").GetComponent<SpriteRenderer>().sprite == lettere && GameObject.Find("Letter24").GetComponent<SpriteRenderer>().sprite == letterw && GameObject.Find("Letter25").GetComponent<SpriteRenderer>().sprite == lettern)
                 {
                     Debug.Log("Peli ratkaistu oikein jee!");
-
-                    // tänne jutut että saa liidun jeejee
+                    button.SetActive(true);
                 }
                 else
                 {
