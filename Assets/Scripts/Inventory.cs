@@ -12,7 +12,7 @@ public GameObject liitutaulu;
 
 public GameObject ristikko;
 
-
+public static Inventory Instance;
 
    // public Item[] Itemlist = new Item[5];
    public List<Item> Itemlist = new List<Item>(5);
@@ -56,7 +56,6 @@ public GameObject ristikko;
         ristikko.SetActive(false);
         liitutaulu.SetActive(false);
         muistipeli.SetActive(false);
-        GameObject.DontDestroyOnLoad(this.gameObject);
     }
 
     public void CraftPhone(Item newItem){
@@ -88,10 +87,16 @@ public GameObject ristikko;
         UpdateSlotUI();
         AddItem(newItem);
        
-        }
-
+        }        
+    }
+    public void Start(){
         
-        
-
+       if (Instance == null) {
+           Instance = this;
+       } else if (Instance != this)
+     {
+         Destroy (gameObject);
+       }
+       DontDestroyOnLoad (gameObject);
     }
 }

@@ -8,12 +8,11 @@ public class MoveScenes2D : MonoBehaviour
     [SerializeField] private string newLevel;
     GameObject handler;
     Inventory inventory;
+    bool check;
 
     void Start(){
         handler = GameObject.Find("InventoryHandler");
-         Debug.Log(handler);
          inventory = handler.GetComponent<Inventory>();
-         Debug.Log(inventory);
     }
 
     void OnTriggerEnter2D(Collider2D other) { 
@@ -22,7 +21,15 @@ public class MoveScenes2D : MonoBehaviour
                  for(int i = 0; i < inventory.Itemlist.Count; i++){
                      if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Avain"){
                          SceneManager.LoadScene(newLevel);
+                         check = true;
                         }
+                        else {
+                            check = false;
+                        }
+                    }
+                    if (check == false){
+                        // mitä tapahtuu jos ei avainta
+                        Debug.Log("Ei avainta.");
                     }
             }
 

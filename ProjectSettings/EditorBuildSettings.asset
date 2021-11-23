@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: bbf57d2377e36a24b88a097f0d7b592d
+  - enabled: 1
+    path: Assets/Scenes/PuhelinScene.unity
+    guid: ee97dfab0af9cca49bdf2e8a2e6a0765
   m_configObjects: {}
