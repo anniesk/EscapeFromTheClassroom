@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eec43f47aa1c044e85450ee1ab650fa, type: 3}
   m_Name: DoorAvain
   m_EditorClassIdentifier: 
-  itemName: New Item
+  itemName: DoorAvain
   Itemdescription: New Description
   icon: {fileID: 21300000, guid: 484e8a05379414e638d0573d32932730, type: 3}
   type: 0

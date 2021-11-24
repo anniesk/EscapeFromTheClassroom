@@ -37,7 +37,7 @@ public class Eipuzzleenuudestaan : MonoBehaviour
              if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Ruuvimeisseli" && sceneName == "SampleScene"){
                  hylly.GetComponent<Collider2D>().isTrigger = false;
             }
-            else if (inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Akku" && sceneName == "SampleScene"){
+            else if (inventory.Itemlist[i] != null &&   sceneName == "SampleScene"&& (inventory.Itemlist[i].itemName == "Akku" || inventory.Itemlist[i].itemName == "Puhelin")){
                  pulpetti2.GetComponent<Collider2D>().isTrigger = false;
             }
             else if (inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Liitu" && sceneName == "SampleScene"){

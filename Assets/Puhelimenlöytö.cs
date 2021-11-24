@@ -27,7 +27,7 @@ public class Puhelimenlöytö : MonoBehaviour
     void Update()
     {
         for(int i = 0; i < inventory.Itemlist.Count; i++){
-             if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "PuhelinEIAKKUA" && sceneName == "SampleScene"){
+             if(inventory.Itemlist[i] != null && sceneName == "SampleScene" && (inventory.Itemlist[i].itemName == "PuhelinEIAKKUA" || inventory.Itemlist[i].itemName == "Puhelin")){
                  // puhelin saatu joten laitetaan trigger pois päältä taas
                  this.gameObject.GetComponent<Collider2D>().isTrigger = false;
              }

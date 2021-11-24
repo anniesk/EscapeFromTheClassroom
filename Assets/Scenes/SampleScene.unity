@@ -989,7 +989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -139.25003, y: -120.5}
+  m_AnchoredPosition: {x: -139, y: -139}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &358792315
@@ -1428,7 +1428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.4303374, y: -1.1111231}
+  m_AnchoredPosition: {x: -7.430391, y: -1.1223536}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!20 &519420031
@@ -1949,6 +1949,7 @@ GameObject:
   - component: {fileID: 733374050}
   - component: {fileID: 733374049}
   - component: {fileID: 733374051}
+  - component: {fileID: 733374052}
   - component: {fileID: 733374053}
   - component: {fileID: 733374055}
   - component: {fileID: 733374054}
@@ -2091,6 +2092,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: PuzzleDScene
+--- !u!114 &733374052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733374046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77399adb7410de45a8d7bcc8d4d40e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &733374053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3130,6 +3143,7 @@ GameObject:
   - component: {fileID: 1124941288}
   - component: {fileID: 1124941291}
   - component: {fileID: 1124941290}
+  - component: {fileID: 1124941292}
   m_Layer: 0
   m_Name: Liitutaulu
   m_TagString: Untagged
@@ -3241,6 +3255,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.897157, y: 4.181592}
   m_EdgeRadius: 0
+--- !u!114 &1124941292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124941287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77399adb7410de45a8d7bcc8d4d40e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1231952685
 GameObject:
   m_ObjectHideFlags: 0
@@ -3468,7 +3494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.37, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1247389104
@@ -4053,6 +4079,7 @@ GameObject:
   - component: {fileID: 1570088865}
   - component: {fileID: 1570088864}
   - component: {fileID: 1570088866}
+  - component: {fileID: 1570088867}
   m_Layer: 0
   m_Name: Pulpetti
   m_TagString: Untagged
@@ -4186,6 +4213,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: PuzzleFScene
+--- !u!114 &1570088867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570088861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77399adb7410de45a8d7bcc8d4d40e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1663804293
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,7 +4260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -139.25003, y: -120.5}
+  m_AnchoredPosition: {x: -359, y: -61.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663804295

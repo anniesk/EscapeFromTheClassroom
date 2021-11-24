@@ -84,19 +84,19 @@
         // jos puzzle tehty ja avain saatu ei pääse puzzleen uudestaan.
         for(int i = 0; i < inventory.Itemlist.Count; i++){
              if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Avain"){
-                 if (slotnumber == 1){
+                 if (slotnumber == 0){
                      button.interactable = false;
                  }
-                 else if (slotnumber == 2){
+                 else if (slotnumber == 1){
                      button2.interactable = false;
                  }
-                 else if (slotnumber == 3){
+                 else if (slotnumber == 2){
                      button3.interactable = false;
                  }
-                 else if (slotnumber == 4){
+                 else if (slotnumber == 3){
                      button4.interactable = false;
                  }
-                 else if (slotnumber == 5){
+                 else if (slotnumber == 4){
                      button5.interactable = false;
                  }
              }
