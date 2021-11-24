@@ -16,6 +16,8 @@ public class MoveScenes2D : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) { 
+
+        SpawnPlayer.spawn = new Vector3(transform.position.x, -6, 0);
         //oven avaus ja avaimen tarkistus
         if(other.CompareTag("Player") && this.gameObject.name == "Ovi"){
                  for(int i = 0; i < inventory.Itemlist.Count; i++){
