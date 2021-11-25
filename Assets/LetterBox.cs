@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class LetterBox : MonoBehaviour
 {
-
+    public AudioSource success;
+    public AudioSource fail;
     public GameObject button;
     public Canvas canvas;
     SpriteRenderer spriteRenderer;
@@ -749,10 +750,16 @@ public class LetterBox : MonoBehaviour
                 {
                     Debug.Log("Peli ratkaistu oikein jee!");
                     button.SetActive(true);
+                    if (success != null) {
+                        success.Play();
+                    }
                 }
                 else
                 {
                     Debug.Log("Jossain on virhe tai useampi");
+                    if (fail != null) {
+                        fail.Play();
+                    }
                 }
             }
         }
