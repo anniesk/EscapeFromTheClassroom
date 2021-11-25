@@ -63,6 +63,7 @@ public class LetterBox : MonoBehaviour
                 {
                     edellinen = i;
                     Debug.Log(edellinen);
+
                     if (Input.GetKeyDown(KeyCode.A))
                     {
                         GameObject.Find("Letter" + i).GetComponent<SpriteRenderer>().sprite = lettera;
@@ -393,6 +394,7 @@ public class LetterBox : MonoBehaviour
                 if (GameObject.Find("Letter8").GetComponent<SpriteRenderer>().sprite == empty)
                 {
                     GameObject.Find("Letter8").GetComponent<SpriteRenderer>().sprite = grey;
+                    GameObject.Find("Letter8").GetComponent<AudioSource>().Play();
                 }
                 else
                 {
@@ -445,6 +447,7 @@ public class LetterBox : MonoBehaviour
                 if (GameObject.Find("Letter9").GetComponent<SpriteRenderer>().sprite == empty)
                 {
                     GameObject.Find("Letter9").GetComponent<SpriteRenderer>().sprite = grey;
+                    GameObject.Find("Letter6").GetComponent<AudioSource>().Play();
                 }
                 else
                 {
@@ -546,6 +549,7 @@ public class LetterBox : MonoBehaviour
                 if (GameObject.Find("Letter16").GetComponent<SpriteRenderer>().sprite == empty)
                 {
                     GameObject.Find("Letter16").GetComponent<SpriteRenderer>().sprite = grey;
+                    GameObject.Find("Letter16").GetComponent<AudioSource>().Play();
                 }
                 else
                 {
@@ -662,6 +666,7 @@ public class LetterBox : MonoBehaviour
             if (GameObject.Find("Letter17").GetComponent<SpriteRenderer>().sprite == empty)
             {
                 GameObject.Find("Letter17").GetComponent<SpriteRenderer>().sprite = grey;
+                GameObject.Find("Letter17").GetComponent<AudioSource>().Play();
             }
             else
             {
@@ -700,6 +705,7 @@ public class LetterBox : MonoBehaviour
             if (GameObject.Find("Letter21").GetComponent<SpriteRenderer>().sprite == empty)
             {
                 GameObject.Find("Letter21").GetComponent<SpriteRenderer>().sprite = grey;
+                GameObject.Find("Letter21").GetComponent<AudioSource>().Play();
             }
             else
             {
