@@ -58,9 +58,9 @@ public class MoveScenes2D : MonoBehaviour
         else if(other.CompareTag("Player") && this.gameObject.name == "Pulpetti (2)"){
                  for(int i = 0; i < inventory.Itemlist.Count; i++){
                      if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Ruuvimeisseli"){
-                         success.Play();
-                         SceneManager.LoadScene(newLevel);
                          check = true;
+                         StartCoroutine(audioWaiter(success, 2));
+                         break;
                         }
                         else {
                             check = false;
@@ -75,9 +75,9 @@ public class MoveScenes2D : MonoBehaviour
         else if(other.CompareTag("Player") && this.gameObject.name == "Pulpetti"){
                  for(int i = 0; i < inventory.Itemlist.Count; i++){
                      if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Avain"){
-                         success.Play();
-                         SceneManager.LoadScene(newLevel);
                          check = true;
+                         StartCoroutine(audioWaiter(success, 2));
+                         break;
                         }
                         else {
                             check = false;
@@ -93,6 +93,14 @@ public class MoveScenes2D : MonoBehaviour
                 Debug.Log("Törmäsit kasviin");
                 success.Play();
             }
+
+        else if(other.CompareTag("Player") && this.gameObject.name == "Kirjahylly"){
+                StartCoroutine(audioWaiter(success, 2));
+            }
+
+        else if(other.CompareTag("Player") && this.gameObject.name == "Kirjahylly (1)"){
+                StartCoroutine(audioWaiter(success, 2));
+            }
         
         else if(other.CompareTag("Player"))
         {
@@ -104,5 +112,10 @@ public class MoveScenes2D : MonoBehaviour
             SceneManager.LoadScene(newLevel);
     }
 
+    IEnumerator audioWaiter(AudioSource sound, float seconds) {
+        sound.Play();
+        yield return new WaitForSeconds(seconds);
+        SceneManager.LoadScene(newLevel);
+    }
 }
 

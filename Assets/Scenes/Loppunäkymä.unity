@@ -669,7 +669,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "Gongratulations! \nYou beat the game. \nYour time was: "
+  m_Text: "Congratulations! \nYou beat the game. \nYour time was: "
 --- !u!222 &1550771338
 CanvasRenderer:
   m_ObjectHideFlags: 0
