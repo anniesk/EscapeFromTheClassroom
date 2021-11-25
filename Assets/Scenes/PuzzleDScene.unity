@@ -1038,7 +1038,7 @@ MonoBehaviour:
   Loydettybuy: 0
   Loydettybe: 0
   Loydettybring: 0
-  done: {fileID: 0}
+  done: {fileID: 1714159548}
   kuinkamontakaannetty: 0
   back: {fileID: 21300000, guid: 003d96a5bffa94558b15cd3325904a17, type: 3}
   Ruutu1: {fileID: 21300000, guid: 0220eb2165cdb4c378fe4662ab0d3fea, type: 3}

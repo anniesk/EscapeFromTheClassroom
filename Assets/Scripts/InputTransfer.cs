@@ -189,7 +189,7 @@ public class InputTransfer : MonoBehaviour
         if(allVerbs.Count == 0)
         {
             button.SetActive(true);
-            allDone.Play();
+            //allDone.Play();
         }
         else
         {
