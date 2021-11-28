@@ -1428,7 +1428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.430534, y: -1.1516848}
+  m_AnchoredPosition: {x: -7.4305377, y: -1.1525545}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!20 &519420031
@@ -1955,6 +1955,7 @@ GameObject:
   - component: {fileID: 733374054}
   - component: {fileID: 733374056}
   - component: {fileID: 733374057}
+  - component: {fileID: 733374058}
   m_Layer: 0
   m_Name: Pulpetti (2)
   m_TagString: Untagged
@@ -2093,6 +2094,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: PuzzleDScene
+  pulpetti_1: {fileID: 0}
+  pulpetti_2: {fileID: 733374058}
+  pulpetti: {fileID: 0}
+  ovi: {fileID: 0}
+  laatikosto: {fileID: 0}
   fail: {fileID: 733374056}
   success: {fileID: 733374052}
 --- !u!82 &733374052
@@ -2381,6 +2387,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77399adb7410de45a8d7bcc8d4d40e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &733374058
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733374046}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5368c450c8ddef042a66cfeeab5d273d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &763518555
 GameObject:
   m_ObjectHideFlags: 0
@@ -2713,6 +2738,8 @@ GameObject:
   - component: {fileID: 1004899677}
   - component: {fileID: 1004899679}
   - component: {fileID: 1004899678}
+  - component: {fileID: 1004899681}
+  - component: {fileID: 1004899680}
   m_Layer: 0
   m_Name: Pulpetti (1)
   m_TagString: Untagged
@@ -2816,7 +2843,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.02869767, y: -0.09906793}
@@ -2832,6 +2859,45 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.205285, y: 2.25486}
   m_EdgeRadius: 0
+--- !u!95 &1004899680
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004899675}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a89b07455e21414c96b04000ba6d963, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1004899681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004899675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d421fa163a831a9439171c4b0b79d174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newLevel: 
+  pulpetti_1: {fileID: 1004899680}
+  pulpetti_2: {fileID: 0}
+  pulpetti: {fileID: 0}
+  ovi: {fileID: 0}
+  laatikosto: {fileID: 0}
+  fail: {fileID: 0}
+  success: {fileID: 0}
 --- !u!1 &1021123089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2925,6 +2991,7 @@ GameObject:
   - component: {fileID: 1062691408}
   - component: {fileID: 1062691411}
   - component: {fileID: 1062691410}
+  - component: {fileID: 1062691412}
   m_Layer: 0
   m_Name: Ovi
   m_TagString: Untagged
@@ -3037,6 +3104,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: "Loppun\xE4kym\xE4"
+  pulpetti_1: {fileID: 0}
+  pulpetti_2: {fileID: 0}
+  pulpetti: {fileID: 0}
+  ovi: {fileID: 1062691412}
+  laatikosto: {fileID: 0}
   fail: {fileID: 1062691411}
   success: {fileID: 1062691410}
 --- !u!82 &1062691410
@@ -3231,6 +3303,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1062691412
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062691405}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 490d8f6dd3850a64cb01e3179f43605c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1100102673
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,6 +3504,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: PuhelinScene
+  pulpetti_1: {fileID: 0}
+  pulpetti_2: {fileID: 0}
+  pulpetti: {fileID: 0}
+  ovi: {fileID: 0}
+  laatikosto: {fileID: 0}
   fail: {fileID: 0}
   success: {fileID: 1119753456}
 --- !u!114 &1119753455
@@ -3625,6 +3721,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: PuzzleBlackboard
+  pulpetti_1: {fileID: 0}
+  pulpetti_2: {fileID: 0}
+  pulpetti: {fileID: 0}
+  ovi: {fileID: 0}
+  laatikosto: {fileID: 0}
   fail: {fileID: 1124941293}
   success: {fileID: 1124941292}
 --- !u!61 &1124941291
@@ -4162,6 +4263,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: 
+  pulpetti_1: {fileID: 0}
+  pulpetti_2: {fileID: 0}
+  pulpetti: {fileID: 0}
+  ovi: {fileID: 0}
+  laatikosto: {fileID: 0}
   fail: {fileID: 1239234546}
   success: {fileID: 1239234546}
 --- !u!1 &1247389102
@@ -4338,6 +4444,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: PuzzleCScene
+  pulpetti_1: {fileID: 0}
+  pulpetti_2: {fileID: 0}
+  pulpetti: {fileID: 0}
+  ovi: {fileID: 0}
+  laatikosto: {fileID: 0}
   fail: {fileID: 0}
   success: {fileID: 0}
 --- !u!4 &1400074121
@@ -4649,6 +4760,7 @@ GameObject:
   - component: {fileID: 1558018312}
   - component: {fileID: 1558018314}
   - component: {fileID: 1558018315}
+  - component: {fileID: 1558018316}
   m_Layer: 0
   m_Name: Kirjahylly
   m_TagString: Untagged
@@ -4760,6 +4872,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: PuzzleBScene
+  pulpetti_1: {fileID: 0}
+  pulpetti_2: {fileID: 0}
+  pulpetti: {fileID: 0}
+  ovi: {fileID: 0}
+  laatikosto: {fileID: 1558018316}
   fail: {fileID: 0}
   success: {fileID: 1558018315}
 --- !u!114 &1558018314
@@ -4870,6 +4987,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1558018316
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558018309}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 711f2b22a1db6424fafb0d36948eb137, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1570088861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4886,6 +5022,7 @@ GameObject:
   - component: {fileID: 1570088868}
   - component: {fileID: 1570088867}
   - component: {fileID: 1570088869}
+  - component: {fileID: 1570088870}
   m_Layer: 0
   m_Name: Pulpetti
   m_TagString: Untagged
@@ -5019,6 +5156,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: PuzzleFScene
+  pulpetti_1: {fileID: 0}
+  pulpetti_2: {fileID: 0}
+  pulpetti: {fileID: 1570088870}
+  ovi: {fileID: 0}
+  laatikosto: {fileID: 0}
   fail: {fileID: 1570088867}
   success: {fileID: 1570088868}
 --- !u!82 &1570088867
@@ -5225,6 +5367,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77399adb7410de45a8d7bcc8d4d40e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1570088870
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570088861}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3bc323d4c4e19054fbb502724cc1fb67, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1663804293
 GameObject:
   m_ObjectHideFlags: 0

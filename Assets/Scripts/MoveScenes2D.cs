@@ -9,6 +9,11 @@ public class MoveScenes2D : MonoBehaviour
     GameObject handler;
     Inventory inventory;
     bool check;
+    public Animator pulpetti_1;
+    public Animator pulpetti_2;
+    public Animator pulpetti;
+    public Animator ovi;
+    public Animator laatikosto;
 
     [SerializeField] private AudioSource fail;
     [SerializeField] private AudioSource success;
@@ -27,6 +32,7 @@ public class MoveScenes2D : MonoBehaviour
                      if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "DoorAvain"){
                          SceneManager.LoadScene(newLevel);
                          check = true;
+                         ovi.SetBool("ovi_auki", true);
                         }
                         else {
                             check = false;
@@ -60,6 +66,7 @@ public class MoveScenes2D : MonoBehaviour
                      if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Ruuvimeisseli"){
                          check = true;
                          StartCoroutine(audioWaiter(success, 2));
+                         pulpetti_2.SetBool("pulpetti2_auki", true);
                          break;
                         }
                         else {
@@ -77,6 +84,7 @@ public class MoveScenes2D : MonoBehaviour
                      if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "Avain"){
                          check = true;
                          StartCoroutine(audioWaiter(success, 2));
+                         pulpetti.SetBool("pulpetti_auki", true);
                          break;
                         }
                         else {
@@ -96,12 +104,15 @@ public class MoveScenes2D : MonoBehaviour
 
         else if(other.CompareTag("Player") && this.gameObject.name == "Kirjahylly"){
                 StartCoroutine(audioWaiter(success, 2));
+                laatikosto.SetBool("laatikosto_ala_auki", true);
             }
 
         else if(other.CompareTag("Player") && this.gameObject.name == "Kirjahylly (1)"){
                 StartCoroutine(audioWaiter(success, 2));
             }
-        
+        else if(other.CompareTag("Player") && this.gameObject.name == "Pulpetti (1)"){
+            pulpetti_1.SetBool("pulpetti1_auki", true);
+        }
         else if(other.CompareTag("Player"))
         {
             
