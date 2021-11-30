@@ -104,7 +104,7 @@ public class MoveScenes2D : MonoBehaviour
 
         else if(other.CompareTag("Player") && this.gameObject.name == "Kirjahylly"){
                 StartCoroutine(audioWaiter(success, 2));
-                laatikosto.SetBool("laatikosto_ala_auki", true);
+                //laatikosto.SetBool("laatikosto_ala_auki", true);
             }
 
         else if(other.CompareTag("Player") && this.gameObject.name == "Kirjahylly (1)"){
@@ -128,5 +128,6 @@ public class MoveScenes2D : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         SceneManager.LoadScene(newLevel);
     }
+
 }
 
