@@ -46,6 +46,10 @@ public class LetterBox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Ristikkopelin alkaessa varjataan ensimmainen kirjain harmaaksi ja suunnaksi asetetaan alas
+        GameObject.Find("Letter1").GetComponent<SpriteRenderer>().sprite = grey;
+        GameObject.Find("Ristikko").GetComponent<RistikkoLogiikka>().Alas = true;
+        GameObject.Find("Ristikko").GetComponent<RistikkoLogiikka>().Eteenpain = true;
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         button = canvas.transform.Find("RistikkoButton").gameObject;
     }
@@ -196,11 +200,15 @@ public class LetterBox : MonoBehaviour
 
     public void LiikuTakaisinpain()
     {
-        if (edellinen == 2)
+        if (edellinen == 1)
+        {
+            GameObject.Find("Letter1").GetComponent<SpriteRenderer>().sprite = empty;
+            GameObject.Find("Letter24").GetComponent<SpriteRenderer>().sprite = grey;
+        }
+        else if (edellinen == 2)
         {
             GameObject.Find("Letter2").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter1").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 3)
         {
@@ -213,19 +221,16 @@ public class LetterBox : MonoBehaviour
             {
                 GameObject.Find("Letter4").GetComponent<SpriteRenderer>().sprite = grey;
             }
-            edellinen = 0;
         }
         else if (edellinen == 4)
         {
             GameObject.Find("Letter4").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter5").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 5)
         {
             GameObject.Find("Letter5").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter6").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 6)
         {
@@ -238,44 +243,42 @@ public class LetterBox : MonoBehaviour
             {
                 GameObject.Find("Letter7").GetComponent<SpriteRenderer>().sprite = grey;
             }
-            edellinen = 0;
         }
         else if (edellinen == 7)
         {
             GameObject.Find("Letter7").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter8").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 8)
         {
             GameObject.Find("Letter8").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter3").GetComponent<SpriteRenderer>().sprite = grey;
             GameObject.Find("Ristikko").GetComponent<RistikkoLogiikka>().Alas = true;
-            edellinen = 0;
         }
         else if (edellinen == 9)
         {
             GameObject.Find("Letter9").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter6").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 10)
         {
             GameObject.Find("Letter10").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter9").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 11)
         {
             GameObject.Find("Letter11").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter10").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 12)
         {
             GameObject.Find("Letter12").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter11").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
+        }
+        else if (edellinen == 13)
+        {
+            GameObject.Find("Letter13").GetComponent<SpriteRenderer>().sprite = empty;
+            GameObject.Find("Letter14").GetComponent<SpriteRenderer>().sprite = grey;
         }
         else if (edellinen == 14)
         {
@@ -288,19 +291,21 @@ public class LetterBox : MonoBehaviour
             {
                 GameObject.Find("Letter15").GetComponent<SpriteRenderer>().sprite = grey;
             }
-            edellinen = 0;
-        }
-        else if (edellinen == 13)
-        {
-            GameObject.Find("Letter13").GetComponent<SpriteRenderer>().sprite = empty;
-            GameObject.Find("Letter14").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 15)
         {
             GameObject.Find("Letter15").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter18").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
+        }
+        else if (edellinen == 16)
+        {
+            GameObject.Find("Letter16").GetComponent<SpriteRenderer>().sprite = empty;
+            GameObject.Find("Letter14").GetComponent<SpriteRenderer>().sprite = grey;
+        }
+        else if (edellinen == 17)
+        {
+            GameObject.Find("Letter17").GetComponent<SpriteRenderer>().sprite = empty;
+            GameObject.Find("Letter25").GetComponent<SpriteRenderer>().sprite = grey;
         }
         else if (edellinen == 18)
         {
@@ -313,19 +318,26 @@ public class LetterBox : MonoBehaviour
             {
                 GameObject.Find("Letter17").GetComponent<SpriteRenderer>().sprite = grey;
             }
-            edellinen = 0;
         }
         else if (edellinen == 19)
         {
             GameObject.Find("Letter19").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter18").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 20)
         {
             GameObject.Find("Letter20").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter19").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
+        }
+        else if (edellinen == 21)
+        {
+            GameObject.Find("Letter21").GetComponent<SpriteRenderer>().sprite = empty;
+            GameObject.Find("Letter13").GetComponent<SpriteRenderer>().sprite = grey;
+        }
+        else if (edellinen == 22)
+        {
+            GameObject.Find("Letter22").GetComponent<SpriteRenderer>().sprite = empty;
+            GameObject.Find("Letter21").GetComponent<SpriteRenderer>().sprite = grey;
         }
         else if (edellinen == 23)
         {
@@ -338,26 +350,18 @@ public class LetterBox : MonoBehaviour
             {
                 GameObject.Find("Letter22").GetComponent<SpriteRenderer>().sprite = grey;
             }
-            edellinen = 0;
-        }
-        else if (edellinen == 22)
-        {
-            GameObject.Find("Letter22").GetComponent<SpriteRenderer>().sprite = empty;
-            GameObject.Find("Letter21").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 24)
         {
             GameObject.Find("Letter24").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter23").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
         else if (edellinen == 25)
         {
             GameObject.Find("Letter25").GetComponent<SpriteRenderer>().sprite = empty;
             GameObject.Find("Letter23").GetComponent<SpriteRenderer>().sprite = grey;
-            edellinen = 0;
         }
+        edellinen = 0;
     }
 
     public void LiikuEteenpain()
