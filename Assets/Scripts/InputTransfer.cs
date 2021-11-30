@@ -137,11 +137,11 @@ public class InputTransfer : MonoBehaviour
 
         if (rightCalculator == 3)
         {
-            textPreesens.text = "Right!";
-            pointImages[0].sprite = point;
+            //textPreesens.text = "Right!";
+            //pointImages[0].sprite = point;
             allVerbs.RemoveAt(verbCalculator);
             sprites.RemoveAt(verbCalculator);
-            pointImages.RemoveAt(0);
+            //pointImages.RemoveAt(0);
 
             if (allVerbs.Count != 0)
             {
@@ -155,7 +155,10 @@ public class InputTransfer : MonoBehaviour
 
         if(allVerbs.Count == 0)
         {
-            switchScene.goClassroom();
+            textPreesens.text = "You got all verbs right!";
+            StartCoroutine(WaitAndGoClassroom());
+            
+            //switchScene.goClassroom();
         }
         else
         {
@@ -202,5 +205,16 @@ public class InputTransfer : MonoBehaviour
         Debug.Log("uusi verbi: " + allVerbs[verbCalculator][0]);
         
 
+    }
+
+    private IEnumerator WaitAndGoClassroom()
+    {
+        
+        
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(3);
+
+        
+        switchScene.goClassroom();
     }
 }
