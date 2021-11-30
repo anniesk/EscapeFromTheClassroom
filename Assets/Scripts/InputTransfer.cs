@@ -96,7 +96,6 @@ public class InputTransfer : MonoBehaviour
 
     public void Start()
     {
-        system = EventSystem.current;
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         button = canvas.transform.Find("DoorKeyButton").gameObject;
 
