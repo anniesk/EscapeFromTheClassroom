@@ -68,7 +68,31 @@ public class InputTransfer : MonoBehaviour
     List<AudioSource> audioSources = new List<AudioSource>();
 
     Screenswitcher switchScene = new Screenswitcher();
-  
+
+    public void Update()
+    {
+        // Tabin painaminen vaihtaa fokusta kolmen kentan valilla
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (inputPreesens.isFocused)
+            {
+                inputImperfect.ActivateInputField();
+            }
+            else if (inputImperfect.isFocused)
+            {
+                inputPerfect.ActivateInputField();
+            }
+            else
+            {
+                inputPreesens.ActivateInputField();
+            }
+        }
+        // Enterin painamisella sama toiminnallisuus kuin Answer-napin painamisella
+        else if (Input.GetKeyDown(KeyCode.Return))
+        {
+            StoreInput();
+        }
+    }
 
     public void Start()
     {
