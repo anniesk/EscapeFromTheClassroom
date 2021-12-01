@@ -47,6 +47,9 @@ TagManager:
   - name: Objects
     uniqueID: 1090319545
     locked: 0
+  - name: Play
+    uniqueID: 7028009
+    locked: 0
   - name: Front
     uniqueID: 714119731
     locked: 0
