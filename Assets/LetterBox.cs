@@ -53,6 +53,7 @@ public class LetterBox : MonoBehaviour
         GameObject.Find("Ristikko").GetComponent<RistikkoLogiikka>().Eteenpain = true;
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         button = canvas.transform.Find("RistikkoButton").gameObject;
+        GameObject.Find("Letter1").GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
@@ -381,7 +382,6 @@ public class LetterBox : MonoBehaviour
         if (edellinen == 1)
         {
             GameObject.Find("Letter2").GetComponent<SpriteRenderer>().sprite = grey;
-            GameObject.Find("Letter1").GetComponent<AudioSource>().Play();
             GameObject.Find("Ristikko").GetComponent<RistikkoLogiikka>().Alas = true;
         }
         else if (edellinen == 2)
