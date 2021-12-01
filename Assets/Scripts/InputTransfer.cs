@@ -46,12 +46,13 @@ public class InputTransfer : MonoBehaviour
     "lie", "lay", "lain", "draw", "drew", "drawn", "cut", "cut", "cut", "blow", "blew", "blown",
     "bite", "bit", "bitten"};
     List<string> rightAnswer = new List<string>();
-
+    
     List <List<string>> allVerbs = new List<List<string>>();
     List<Sprite> sprites = new List<Sprite>();
     List<Image> pointImages = new List<Image>();
 
     Screenswitcher switchScene = new Screenswitcher();
+    public Button answerButton;
   
 
     public void Start()
@@ -102,6 +103,7 @@ public class InputTransfer : MonoBehaviour
 
     public void StoreInput()
     {
+        answerButton.interactable = false;
         preesens = inputPreesens.text; // inputPerfect.GetComponent<Text>().text;
         imperfect = inputImperfect.text;
         perfect = inputPerfect.text;
@@ -203,18 +205,20 @@ public class InputTransfer : MonoBehaviour
         inputPerfect.text = "";
 
         Debug.Log("uusi verbi: " + allVerbs[verbCalculator][0]);
-        
+        answerButton.interactable = true;
+
 
     }
 
     private IEnumerator WaitAndGoClassroom()
     {
         
-        
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(3);
 
-        
         switchScene.goClassroom();
+        
     }
+
+
 }
