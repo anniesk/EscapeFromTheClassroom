@@ -106,10 +106,6 @@ public class MoveScenes2D : MonoBehaviour
                 StartCoroutine(audioWaiter(success, 2));
                 //laatikosto.SetBool("laatikosto_ala_auki", true);
             }
-
-        else if(other.CompareTag("Player") && this.gameObject.name == "Kirjahylly (1)"){
-                StartCoroutine(audioWaiter(success, 2));
-            }
         else if(other.CompareTag("Player") && this.gameObject.name == "Pulpetti (1)"){
             pulpetti_1.SetBool("pulpetti1_auki", true);
         }
