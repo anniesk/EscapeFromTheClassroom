@@ -2975,6 +2975,7 @@ MonoBehaviour:
   eightPoint: {fileID: 1681219241}
   emptyPoint: {fileID: 21300000, guid: 51b4ef73605a4a44faab443b0e4fa74d, type: 3}
   point: {fileID: 21300000, guid: 70d3a0d4423b75240a580166018d5adb, type: 3}
+  answerButton: {fileID: 1660365794}
 --- !u!4 &2144278385
 Transform:
   m_ObjectHideFlags: 0
