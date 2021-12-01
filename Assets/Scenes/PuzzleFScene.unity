@@ -295,6 +295,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &26394193
 SpriteRenderer:
@@ -451,6 +452,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &86201867
 SpriteRenderer:
@@ -608,6 +610,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &104006315
 SpriteRenderer:
@@ -1024,6 +1027,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &220779755
 SpriteRenderer:
@@ -1181,6 +1185,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &269494254
 SpriteRenderer:
@@ -1556,7 +1561,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.26, y: 1.52}
+    oldSize: {x: 18.85, y: 5.83}
     newSize: {x: 10.26, y: 1.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1605,7 +1610,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d168630747674ef4d91b0bf9edd83043, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b5473a57a1ea4603bd2dc384472c3bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1625,7 +1630,7 @@ Transform:
   m_GameObject: {fileID: 398537011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.21, y: -3.18, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.18109027, y: 0.18109027, z: 0.6036342}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 33
@@ -1884,6 +1889,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &535303929
 SpriteRenderer:
@@ -2040,6 +2046,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &665981787
 SpriteRenderer:
@@ -2278,6 +2285,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &727793800
 SpriteRenderer:
@@ -2434,6 +2442,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &770373743
 SpriteRenderer:
@@ -2590,6 +2599,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &826155245
 SpriteRenderer:
@@ -2747,6 +2757,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &983777257
 SpriteRenderer:
@@ -2999,6 +3010,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &1059730344
 SpriteRenderer:
@@ -3155,6 +3167,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &1123452981
 SpriteRenderer:
@@ -3393,6 +3406,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &1281979639
 SpriteRenderer:
@@ -3549,6 +3563,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &1462415952
 SpriteRenderer:
@@ -3706,6 +3721,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &1633185482
 SpriteRenderer:
@@ -3959,6 +3975,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &1655762929
 SpriteRenderer:
@@ -4212,6 +4229,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &1692091253
 SpriteRenderer:
@@ -4464,6 +4482,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &1783036682
 SpriteRenderer:
@@ -4620,6 +4639,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &1809662202
 SpriteRenderer:
@@ -4776,6 +4796,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &1849373095
 SpriteRenderer:
@@ -4971,6 +4992,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!61 &2051812582
 BoxCollider2D:
@@ -5088,6 +5110,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &2079283692
 SpriteRenderer:
@@ -5246,6 +5269,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &2090009370
 SpriteRenderer:
@@ -5594,6 +5618,7 @@ MonoBehaviour:
   lettery: {fileID: 21300000, guid: b07e4c9a0f29c48cd8453b1dc22fccfb, type: 3}
   letterz: {fileID: 21300000, guid: 3bc6ae205b0844fffb72d5a84a5dffb5, type: 3}
   edellinen: 0
+  harmaa: 0
   alas: 0
 --- !u!212 &2113287052
 SpriteRenderer:
