@@ -30,9 +30,9 @@ public class MoveScenes2D : MonoBehaviour
         if(other.CompareTag("Player") && this.gameObject.name == "Ovi"){
                  for(int i = 0; i < inventory.Itemlist.Count; i++){
                      if(inventory.Itemlist[i] != null && inventory.Itemlist[i].itemName == "DoorAvain"){
+                         StartCoroutine(animationWaiter(ovi, "ovi_auki", 2));
                          SceneManager.LoadScene(newLevel);
                          check = true;
-                         ovi.SetBool("ovi_auki", true);
                         }
                         else {
                             check = false;
@@ -121,6 +121,12 @@ public class MoveScenes2D : MonoBehaviour
 
     IEnumerator audioWaiter(AudioSource sound, float seconds) {
         sound.Play();
+        yield return new WaitForSeconds(seconds);
+        SceneManager.LoadScene(newLevel);
+    }
+
+    IEnumerator animationWaiter(Animator animator, string animation, float seconds) {
+        animator.SetBool(animation, true);
         yield return new WaitForSeconds(seconds);
         SceneManager.LoadScene(newLevel);
     }
