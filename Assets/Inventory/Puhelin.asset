@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Puhelin
   Itemdescription: New Description
-  icon: {fileID: 21300000, guid: bec4ab6b472b24a1799af8ae2a788d82, type: 3}
+  icon: {fileID: 21300000, guid: d4614ed1396093041a6057db0f4b924f, type: 3}
   type: 0
